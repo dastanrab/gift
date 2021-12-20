@@ -1,0 +1,28 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                    var date = $("input").val();
+                    $.get("https://ap1.giftstop.ir/api/view/tops", function(result){
+                        console.log(result);
+                    });
+
+
+            });
+
+        });
+    </script>
+</head>
+<body>
+
+
+
+<input type="date">
+<button>test post</button>
+<span></span>
+
+</body>
+</html>
+

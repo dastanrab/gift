@@ -1,0 +1,30 @@
+
+POST http://127.0.0.1:8000/api/GExel
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data;name="tag_name"; name="select_file"; filename="book1.xlsx"
+
+< ./book1.xlsx
+
+--WebAppBoundary--
+
+###
+POST http://127.0.0.1:8000/api/KCheck
+Content-Type: application/json
+
+{
+
+   "token": 26811
+
+}
+
+###
+POST http://127.0.0.1:8000/api/GExel
+Content-Type: application/json
+
+{
+
+    "token": 26811
+
+}
