@@ -20,6 +20,11 @@ class back_up{
         }
         return $this;
     }
+    public function push(string $add){
+        $this->steps[count($this->steps)+1]=$add;
+        $this->$add=$add;
+        return $this;
+    }
 }
 $test=new back_up();
 $test->setFirst(' !',2);
